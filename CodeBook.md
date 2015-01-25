@@ -58,9 +58,9 @@ Description of steps "run_analysis.R" script
 - only.act	character vector (length = 6) unique names of activities
 - tidy.data	creating empty data frame
 - for {} 	for each subject and each activity:
---creating temporary data frame temp.df. It equals subsetting one number of subject and one activity
--- avg.data	numeric vector which includes mean values of each column of temp.df, besides columns "subject" and "activity" (length = 66)
--- avg.data.n	data frame (lke a row) with 1 observation and 68 variables
--- tidy.data	data frame which needed. Each observation of tidy_data is one avg.data.n. Dimension tidy-data = 180 observation and 68 variables. where first two variables are "subject" and "activity"
+- creating temporary data frame temp.df. It equals subsetting one number of subject and one activity
+- avg.data	numeric vector which includes mean values of each column of temp.df, besides columns "subject" and "activity" (length = 66)
+- avg.data.n	data frame (lke a row) with 1 observation and 68 variables
+- tidy.data	data frame which needed. Each observation of tidy_data is one avg.data.n. Dimension tidy-data = 180 observation and 68 variables. where first two variables are "subject" and "activity"
 
 -writing tidy_data to "./tidy_average_data.txt" (row.name=FALSE)
