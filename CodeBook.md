@@ -52,7 +52,7 @@ Description of steps "run_analysis.R" script
 - all 		merging data frame. includes column s.all as number of subject, y.names as name of activity, x.mean_std - measurements. It includes 10299 observations of 68 variables.
 - writing all to "./all_cleaned_data.txt"
 
-# 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+### 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 - only.subj	integer vector (length = 30) unique number of each subject
 - only.act	character vector (length = 6) unique names of activities
@@ -63,4 +63,4 @@ Description of steps "run_analysis.R" script
 - avg.data.n	data frame (lke a row) with 1 observation and 68 variables
 - tidy.data	data frame which needed. Each observation of tidy_data is one avg.data.n. Dimension tidy-data = 180 observation and 68 variables. where first two variables are "subject" and "activity"
 
--writing tidy_data to "./tidy_average_data.txt" (row.name=FALSE)
+- writing tidy_data to "./tidy_average_data.txt" (row.name=FALSE)
